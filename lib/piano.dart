@@ -11,10 +11,14 @@ class peino extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+          appBar: AppBar(
+          title: Center(child: Text('Piano')),
+          backgroundColor: Colors.blueGrey,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+         SizedBox(height: 4,),
               // Row 1
               Expanded(
                 child: Row(
@@ -252,6 +256,7 @@ class peino extends StatelessWidget {
                   ],
                 ),
               ),
+               SizedBox(height: 8,),
             ],
           ),
         ),
